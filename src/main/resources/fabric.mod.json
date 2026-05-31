@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "meteor-auto-sellhand",
+  "version": "${version}",
+  "name": "Meteor Mining Utils",
+  "description": "Automatically sells whitelisted mining items and repairs configured hotbar tools or equipped armor.",
+  "authors": [
+    "yogipw"
+  ],
+  "icon": "assets/auto-sellhand/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.yogipw.autosellhand.AutoSellhandAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
